@@ -1,0 +1,7 @@
+__pychache__/
+*.pyc
+.env
+logs/
+old/
+service_account.json
+*.code-workspace
