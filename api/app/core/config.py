@@ -25,6 +25,9 @@ class Settings(BaseSettings):
 	task_retry_max_seconds: int = Field(default=1800, alias="TASK_RETRY_MAX_SECONDS")
 	task_idempotency_ttl_seconds: int = Field(default=604800, alias="TASK_IDEMPOTENCY_TTL_SECONDS")
 
+	# API auth
+	api_token: str = Field(..., alias="API_TOKEN")
+
 	# Postgres
 	postgres_host: str = Field(..., alias="POSTGRES_HOST")
 	postgres_port: int = Field(5432, alias="POSTGRES_PORT")
